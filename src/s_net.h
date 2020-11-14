@@ -6,6 +6,15 @@
 
 #pragma once
 
+/* **********************************************************
+ * proposed compatiblity hotfix for MinGW/MSYS1 build system
+ *
+ * #define TEST_BOOLEAN_TRUE 1
+ * #define IPV6_V6ONLY TEST_BOOLEAN_TRUE
+ * #define _WIN32_WINNT 0x0600
+ *
+ */
+
 #ifdef _WIN32
 #include <winsock2.h>
 #include <ws2tcpip.h>
